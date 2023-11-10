@@ -1,0 +1,135 @@
+---
+title: Introduction to R
+subtitle: TU Dresden
+author: Sarah Zeller
+format: 
+  html: 
+    self-contained: true
+  revealjs:
+    self-contained: true
+
+execute:
+  echo: true
+    
+engine: knitr
+filters:
+  - webr
+---
+
+# Why R?
+
+-   beginner-friendly programming language
+-   programmming language specifically for statistics
+-   awesome for creating graphs 📈
+-   easy data-handling ✨
+
+# Examples
+
+[![](images/mexico-ryan-hart.jpg)](https://twitter.com/ryanahart/status/1722937635763638390/photo/1)
+
+# Examples
+
+[![](images/nrennie-house-election.png)](https://twitter.com/nrennie35/status/1721845744733192395/photo/1)
+
+# Examples
+
+::: {layout-ncol="2"}
+[![](images/penguins-thompson.png)](https://pbs.twimg.com/media/EzFDCiJWQAUfBqn?format=png&name=900x900)
+
+
+
+[![](images/pp-eagle-01.png)](https://pbs.twimg.com/media/EeB5CDRXoAIi0R8?format=png&name=900x900)
+:::
+
+# So what can you do with `R`?
+
+
+## Simple calculations
+
+```{webr-r}
+4 + 2
+```
+
+## Show data
+```{webr-r}
+mtcars |> head()
+mtcars |> summary()
+```
+
+## Plot data
+```{webr-r}
+plot(mtcars$mpg, mtcars$hp)
+```
+
+
+# Let's get started! 🚀
+
+-   Open *RStudio*
+-   Create an R-project (`.rproj`)
+-   Open a `.R` script
+-   Save this script
+-   Let's check out the different panes 🔎
+
+## In the console...
+
+Let's use this as a calculator.
+
+```{r}
+#| echo: true
+#| eval: true
+2 + 2
+15 * 35
+7^3
+539/11
+40 %% 9
+```
+## In the console (ctd)...
+
+Let's learn how to use a function.
+
+```{r}
+#| eval: false
+#| echo: true
+?head
+?names
+?plot
+
+```
+
+## In the `R` script...
+
+Let's have a look at a data set: `mtcars`. What is it about?
+
+To execute a line of code, use `Shift` + `Enter`.
+
+```{r}
+#| eval: true
+head(mtcars)
+names(mtcars)
+
+```
+
+---
+
+Let's plot this data set, specifically the columns `mpg` and `hp`.
+To access them, we have to put a `$` between the name of the data set and the name of the column.
+
+It will show up in the `Plots` pane.
+```{r}
+#| eval: true
+plot(mtcars$mpg, mtcars$hp)
+
+```
+
+## Comments
+
+We're still in the R script.
+What if we want to explain to others (or our future self) what we intended with this code?
+
+```{r}
+#| label: comment
+#| code-line-numbers: "1"
+# create a scatterplot 
+plot(mtcars$mpg, mtcars$hp)
+```
+
