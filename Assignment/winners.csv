@@ -1,0 +1,166 @@
+"Category","Year","Athlete","Nationality","Time"
+"Men",1981,"Dick Beardsley (Tie)","United States",0.0915277777777778
+"Men",1981,"Inge Simonsen (Tie)","Norway",0.0915277777777778
+"Men",1982,"Hugh Jones","United Kingdom",0.0898611111111111
+"Men",1983,"Mike Gratton","United Kingdom",0.0900810185185185
+"Men",1984,"Charlie Spedding","United Kingdom",0.0902430555555556
+"Men",1985,"Steve Jones","United Kingdom",0.0890740740740741
+"Men",1986,"Toshihiko Seko","Japan",0.0903009259259259
+"Men",1987,"Hiromi Taniguchi","Japan",0.090162037037037
+"Men",1988,"Henrik Jørgensen","Denmark",0.0905092592592593
+"Men",1989,"Douglas Wakiihuri","Kenya",0.0896180555555556
+"Men",1990,"Allister Hutton","United Kingdom",0.0903935185185185
+"Men",1991,"Yakov Tolstikov","Soviet Union",0.0897800925925926
+"Men",1992,"António Pinto","Portugal",0.0903009259259259
+"Men",1993,"Eamonn Martin","United Kingdom",0.0908564814814815
+"Men",1994,"Dionicio Cerón","Mexico",0.0895023148148148
+"Men",1995,"Dionicio Cerón","Mexico",0.0892361111111111
+"Men",1996,"Dionicio Cerón","Mexico",0.0902777777777778
+"Men",1997,"António Pinto","Portugal",0.0888310185185185
+"Men",1998,"Abel Antón","Spain",0.0888541666666667
+"Men",1999,"Abdelkader El Mouaziz","Morocco",0.0888541666666667
+"Men",2000,"António Pinto","Portugal",0.0879166666666667
+"Men",2001,"Abdelkader El Mouaziz","Morocco",0.0882986111111111
+"Men",2002,"Khalid Khannouchi","United States",0.0872453703703704
+"Men",2003,"Gezahegne Abera","Ethiopia",0.0888425925925926
+"Men",2004,"Evans Rutto","Kenya",0.0877083333333333
+"Men",2005,"Martin Lel","Kenya",0.088599537037037
+"Men",2006,"Felix Limo","Kenya",0.0879513888888889
+"Men",2007,"Martin Lel","Kenya",0.0886689814814815
+"Men",2008,"Martin Lel","Kenya",0.0869791666666667
+"Men",2009,"Samuel Wanjiru","Kenya",0.0869212962962963
+"Men",2010,"Tsegaye Kebede","Ethiopia",0.087025462962963
+"Men",2011,"Emmanuel Kipchirchir Mutai","Kenya",0.0865740740740741
+"Men",2012,"Wilson Kipsang Kiprotich","Kenya",0.0866203703703704
+"Men",2013,"Tsegaye Kebede","Ethiopia",0.0875462962962963
+"Men",2014,"Wilson Kipsang Kiprotich","Kenya",0.0864467592592593
+"Men",2015,"Eliud Kipchoge","Kenya",0.0865972222222222
+"Men",2016,"Eliud Kipchoge","Kenya",0.085474537037037
+"Men",2017,"Daniel Wanjiru","Kenya",0.0873611111111111
+"Men",2018,"Eliud Kipchoge","Kenya",0.0863078703703704
+"Men",2019,"Eliud Kipchoge","Kenya",0.085150462962963
+"Men",2020,"Shura Kitata Tola","Ethiopia",0.0874768518518518
+"Men",2021,"Sisay Lemma","Ethiopia",0.0861226851851852
+"Men",2022,"Amos Kipruto","Kenya",0.0865625
+"Men",2023,"Kelvin Kiptum","Kenya",0.0843171296296296
+"Women",1981,"Joyce Smith","United Kingdom",0.104131944444444
+"Women",1982,"Joyce Smith","United Kingdom",0.103969907407407
+"Women",1983,"Grete Waitz","Norway",0.101030092592593
+"Women",1984,"Ingrid Kristiansen","Norway",0.100300925925926
+"Women",1985,"Ingrid Kristiansen","Norway",0.0979861111111111
+"Women",1986,"Grete Waitz","Norway",0.100625
+"Women",1987,"Ingrid Kristiansen","Norway",0.0991666666666667
+"Women",1988,"Ingrid Kristiansen","Norway",0.101168981481481
+"Women",1989,"Véronique Marot","United Kingdom",0.101342592592593
+"Women",1990,"Wanda Panfil","Poland",0.101747685185185
+"Women",1991,"Rosa Mota","Portugal",0.101550925925926
+"Women",1992,"Katrin Dörre-Heinig","Germany",0.103923611111111
+"Women",1993,"Katrin Dörre-Heinig","Germany",0.1021875
+"Women",1994,"Katrin Dörre-Heinig","Germany",0.105949074074074
+"Women",1995,"Małgorzata Sobańska","Poland",0.102581018518519
+"Women",1996,"Liz McColgan","United Kingdom",0.102708333333333
+"Women",1997,"Joyce Chepchumba","Kenya",0.101979166666667
+"Women",1998,"Catherina McKiernan","Ireland",0.101689814814815
+"Women",1999,"Joyce Chepchumba","Kenya",0.0995601851851852
+"Women",2000,"Tegla Loroupe","Kenya",0.100381944444444
+"Women",2001,"Derartu Tulu","Ethiopia",0.0999652777777778
+"Women",2002,"Paula Radcliffe","United Kingdom",0.0964814814814815
+"Women",2003,"Paula Radcliffe","United Kingdom",0.0940393518518518
+"Women",2004,"Margaret Okayo","Kenya",0.0990162037037037
+"Women",2005,"Paula Radcliffe","United Kingdom",0.095625
+"Women",2006,"Deena Kastor","United States",0.0969328703703704
+"Women",2007,"Zhou Chunxiu","China",0.097662037037037
+"Women",2008,"Irina Mikitenko","Germany",0.100162037037037
+"Women",2009,"Irina Mikitenko","Germany",0.0987384259259259
+"Women",2010,"Aselefech Mergia","Ethiopia",0.0990509259259259
+"Women",2011,"Mary Jepkosgei Keitany","Kenya",0.0967476851851852
+"Women",2012,"Mary Jepkosgei Keitany","Kenya",0.0962615740740741
+"Women",2013,"Priscah Jeptoo","Kenya",0.0973958333333333
+"Women",2014,"Edna Kiplagat","Kenya",0.0974652777777778
+"Women",2015,"Tigist Tufa","Ethiopia",0.0995486111111111
+"Women",2016,"Jemima Sumgong","Kenya",0.0992824074074074
+"Women",2017,"Mary Jepkosgei Keitany","Kenya",0.095150462962963
+"Women",2018,"Vivian Cheruiyot","Kenya",0.0961921296296296
+"Women",2019,"Brigid Kosgei","Kenya",0.0960648148148148
+"Women",2020,"Brigid Kosgei","Kenya",0.0965046296296296
+"Women",2021,"Joyciline Jepkosgei","Kenya",0.0956365740740741
+"Women",2022,"Yalemzerf Yehualaw","Ethiopia",0.0954398148148148
+"Women",2023,"Sifan Hassan","Netherlands",0.0962152777777778
+"Wheelchair Men",1983,"Gordon Perry","United Kingdom",0.138969907407407
+"Wheelchair Men",1984,"Kevin Breen","Ireland",0.110185185185185
+"Wheelchair Men",1985,"Chris Hallam","United Kingdom",0.0971412037037037
+"Wheelchair Men",1986,"Gerry O'Rourke","Ireland",0.101828703703704
+"Wheelchair Men",1987,"Chris Hallam","United Kingdom",0.0892824074074074
+"Wheelchair Men",1988,"Ted Vince","Canada",0.0844560185185185
+"Wheelchair Men",1989,"David Holding","United Kingdom",0.0829976851851852
+"Wheelchair Men",1990,"Håkan Ericsson","Sweden",0.0813888888888889
+"Wheelchair Men",1991,"Farid Amarouche","France",0.0783796296296296
+"Wheelchair Men",1992,"Daniel Wesley","Canada",0.0775694444444444
+"Wheelchair Men",1993,"George Vandamme","Belgium",0.072337962962963
+"Wheelchair Men",1994,"David Holding","United Kingdom",0.0736805555555556
+"Wheelchair Men",1995,"Heinz Frei","Switzerland",0.068912037037037
+"Wheelchair Men",1996,"David Holding","United Kingdom",0.0720833333333333
+"Wheelchair Men",1997,"David Holding","United Kingdom",0.0710069444444444
+"Wheelchair Men",1998,"Heinz Frei","Switzerland",0.0661805555555556
+"Wheelchair Men",1999,"Heinz Frei","Switzerland",0.0662847222222222
+"Wheelchair Men",2000,"Kevin Papworth","United Kingdom",0.0707175925925926
+"Wheelchair Men",2001,"Denis Lemeunier","France",0.0712615740740741
+"Wheelchair Men",2002,"David Weir","United Kingdom",0.0692592592592593
+"Wheelchair Men",2003,"Joël Jeannot","France",0.063912037037037
+"Wheelchair Men",2004,"Saúl Mendoza","Mexico",0.0673148148148148
+"Wheelchair Men",2005,"Saúl Mendoza","Mexico",0.0665625
+"Wheelchair Men",2006,"David Weir","United Kingdom",0.0623611111111111
+"Wheelchair Men",2007,"David Weir","United Kingdom",0.0630902777777778
+"Wheelchair Men",2008,"David Weir","United Kingdom",0.0652314814814815
+"Wheelchair Men",2009,"Kurt Fearnley","Australia",0.0617708333333333
+"Wheelchair Men",2010,"Josh Cassidy","Canada",0.0662152777777778
+"Wheelchair Men",2011,"David Weir","United Kingdom",0.0625578703703704
+"Wheelchair Men",2012,"David Weir","United Kingdom",0.0641898148148148
+"Wheelchair Men",2013,"Kurt Fearnley","Australia",0.0635300925925926
+"Wheelchair Men",2014,"Marcel Hug","Switzerland",0.0643634259259259
+"Wheelchair Men",2015,"Josh George","United States",0.0635532407407407
+"Wheelchair Men",2016,"Marcel Hug","Switzerland",0.0661921296296296
+"Wheelchair Men",2017,"David Weir","United Kingdom",0.0632638888888889
+"Wheelchair Men",2018,"David Weir","United Kingdom",0.0633680555555556
+"Wheelchair Men",2019,"Daniel Romanchuk","United States",0.0650115740740741
+"Wheelchair Men",2020,"Brent Lakatos","Canada",0.066712962962963
+"Wheelchair Men",2021,"Marcel Hug","Switzerland",0.0600347222222222
+"Wheelchair Women",1983,"Denise Smith","United Kingdom",0.186840277777778
+"Wheelchair Women",1984,"Kay McShane","Ireland",0.131990740740741
+"Wheelchair Women",1985,"Kay McShane","Ireland",0.116111111111111
+"Wheelchair Women",1986,"Kay McShane","Ireland",0.126851851851852
+"Wheelchair Women",1987,"Karen Davidson","United Kingdom",0.114930555555556
+"Wheelchair Women",1988,"Karen Davidson","United Kingdom",0.112326388888889
+"Wheelchair Women",1989,"Josie Cichockyj","United Kingdom",0.127708333333333
+"Wheelchair Women",1990,"Connie Hansen","Denmark",0.0905671296296296
+"Wheelchair Women",1991,"Connie Hansen","Denmark",0.0865740740740741
+"Wheelchair Women",1992,"Tanni Grey-Thompson","United Kingdom",0.0954050925925926
+"Wheelchair Women",1993,"Rose Hill","United Kingdom",0.085474537037037
+"Wheelchair Women",1994,"Tanni Grey-Thompson","United Kingdom",0.0891898148148148
+"Wheelchair Women",1995,"Rose Hill","United Kingdom",0.095162037037037
+"Wheelchair Women",1996,"Tanni Grey-Thompson","United Kingdom",0.0834490740740741
+"Wheelchair Women",1997,"Monica Wetterström","Sweden",0.0757986111111111
+"Wheelchair Women",1998,"Tanni Grey-Thompson","United Kingdom",0.0847337962962963
+"Wheelchair Women",1999,"Monica Wetterström","Sweden",0.0816898148148148
+"Wheelchair Women",2000,"Sarah Piercy","United Kingdom",0.0996527777777778
+"Wheelchair Women",2001,"Tanni Grey-Thompson","United Kingdom",0.0929976851851852
+"Wheelchair Women",2002,"Tanni Grey-Thompson","United Kingdom",0.0992013888888889
+"Wheelchair Women",2003,"Francesca Porcellato","Italy",0.0863541666666667
+"Wheelchair Women",2004,"Francesca Porcellato","Italy",0.0867824074074074
+"Wheelchair Women",2005,"Francesca Porcellato","Italy",0.08125
+"Wheelchair Women",2006,"Francesca Porcellato","Italy",0.0832986111111111
+"Wheelchair Women",2007,"Shelly Woods","United Kingdom",0.0768518518518519
+"Wheelchair Women",2008,"Sandra Graf","Switzerland",0.0750462962962963
+"Wheelchair Women",2009,"Amanda McGrory","United States",0.0768402777777778
+"Wheelchair Women",2010,"Wakako Tsuchida","Japan",0.0781597222222222
+"Wheelchair Women",2011,"Amanda McGrory","United States",0.0739699074074074
+"Wheelchair Women",2012,"Shelly Woods","United Kingdom",0.0758101851851852
+"Wheelchair Women",2013,"Tatyana McFadden","United States",0.0736342592592593
+"Wheelchair Women",2014,"Tatyana McFadden","United States",0.0730555555555556
+"Wheelchair Women",2015,"Tatyana McFadden","United States",0.0703009259259259
+"Wheelchair Women",2016,"Tatyana McFadden","United States",0.0723842592592593
+"Wheelchair Women",2017,"Manuela Schär","Switzerland",0.0694097222222222
+"Wheelchair Women",2018,"Madison de Rozario","Australia",0.0715046296296296
+"Wheelchair Women",2019,"Manuela Schär","Switzerland",0.0723263888888889
+"Wheelchair Women",2020,"Nikita den Boer","Netherlands",0.069525462962963
+"Wheelchair Women",2021,"Manuela Schär","Switzerland",0.0693518518518518

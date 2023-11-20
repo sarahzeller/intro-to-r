@@ -1,0 +1,41 @@
+---
+title: Assignment
+subtitle: Introduction to R
+author: Sarah Zeller, TU Dresden
+
+format: pdf
+
+editor:
+  markdown:
+    wrap: sentence
+    
+bibliography: references.bib
+---
+
+In your assignment, you can use the skills you have learned during the course.
+The data used for the assignment are obtained from the `LondonMarathon` package [@LondonMarathon].
+You may work in teams of 2 students.
+
+
+Please hand in your entire `R` project, including the datasets, in a zipped folder, via e-mail to [sarah.zeller@tu-dresden.de](mailto:sarah.zeller@tu-dresden.de).
+The deadline is 31 December 2023, 11.59 PM.
+The `.qmd` document needs to render without an error.
+
+Please follow these steps.
+Steps 4--11 are to be carried out within a `Quarto` document.
+
+1.  Create a new `R` project.
+2.  Copy the files `london_marathon.csv` and `winners.csv` to this project.
+3.  Create a `Quarto` document within this project.
+4.  Load in the dataset `london_marathon.csv` on London Marathons using the package `here` as `london_marathon`.
+5.  Get to know the dataset.
+6.  Read in the dataset `winnners.csv` and merge it with `london_marathon`.
+7.  Visualize interesting relationships between variables in the resulting dataset.
+8.  Prettify the resulting graph.
+9.  Describe these relationships in the report.
+10. Cite the used packages.
+11. Render the report.
+
+Happy coding -- and googling!
+
+## References
