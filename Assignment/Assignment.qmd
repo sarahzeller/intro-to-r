@@ -27,7 +27,7 @@ Steps 4--11 are to be carried out within a `Quarto` document.
 1.  Create a new `R` project.
 2.  Copy the files `london_marathon.csv` and `winners.csv` to this project.
 3.  Create a `Quarto` document within this project.
-4.  Load in the dataset `london_marathon.csv` on London Marathons using the package `here` as `london_marathon`.
+4.  Load in the dataset `london_marathon.csv` on London Marathons as `london_marathon` using the package `here`.
 5.  Get to know the dataset.
 6.  Read in the dataset `winnners.csv` and merge it with `london_marathon`.
 7.  Visualize interesting relationships between variables in the resulting dataset.
