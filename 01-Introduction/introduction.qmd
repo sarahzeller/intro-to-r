@@ -38,7 +38,7 @@ filters:
 ::: {layout-ncol="2"}
 [![](images/penguins-thompson.png)](https://pbs.twimg.com/media/EzFDCiJWQAUfBqn?format=png&name=900x900)
 
-[![](images/pp-eagle-01.png)](https://pbs.twimg.com/media/EeB5CDRXoAIi0R8?format=png&name=900x900)
+[![](images/pp-eagle.png)](https://pbs.twimg.com/media/EeB5CDRXoAIi0R8?format=png&name=900x900)
 :::
 
 # So what can you do with `R`?
@@ -52,6 +52,7 @@ filters:
 ## Show data
 
 ```{webr-r}
+library(tidyverse)
 mpg |> head()
 mpg |> summary()
 ```
@@ -105,6 +106,7 @@ To execute a line of code, use `Shift` + `Enter`.
 
 ```{r}
 #| eval: true
+library(tidyverse)
 head(mpg)
 names(mpg)
 
@@ -188,7 +190,6 @@ library(palmerpenguins)
 
 Have a look at the dataset `palmerpenguins`. What is it about? Plot a scatterplot.
 
-![Artwork by Allison Horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)
 
 ```{r}
 #| eval: false
@@ -196,3 +197,5 @@ Have a look at the dataset `palmerpenguins`. What is it about? Plot a scatterplo
 library(tidyverse)
 data(penguins)
 ```
+
+![Artwork by Allison Horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)
