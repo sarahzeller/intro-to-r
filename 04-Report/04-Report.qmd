@@ -1,0 +1,109 @@
+---
+title: Create your own quarto doc
+author: Sarah Zeller
+subtitle: TUD
+
+format: 
+  revealjs:
+    self-contained: true
+  html: 
+    self-contained: true
+
+execute:
+  echo: true
+  warning: false
+  
+bibliography: 
+  grateful-refs.bib
+---
+
+![Artwork by Allison Horst](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e)
+
+# What's in a `Quarto` documentation?
+
+-   Documentation (markdown text)
+-   Code
+-   Graphs
+-   (Tables)
+
+# Documentation
+
+![Artwork by Allison Horst](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/ac60a4fb-6b2e-43f4-b0b9-44e137d4cef4_rw_3840.png?h=08991bf991acf8efd32f4b022354b535)
+
+## Credits
+
+-   Describing data sources
+-   Citing used packages 
+
+```{r}
+#| eval: false
+grateful::cite_packages(output = "table", out.dir = ".") |> 
+  kableExtra::kable()
+
+grateful::cite_packages(output = "paragraph", out.dir = ".")
+```
+
+
+## Thought processes
+
+-   Describe why you change your data: like commenting
+-   Describe your results: How can this graph be interpreted?
+-   What are limitations?
+
+# Code
+
+## Code Chunks
+
+```{r}
+#| echo: fenced
+#| label: example-code-chunk
+#| output: true
+#| warning: false
+#| code-line-numbers: true
+
+library(tidyverse)
+library(palmerpenguins)
+data(penguins)
+subset <- penguins |> filter(island == "Dream")
+
+```
+
+## Inline code
+
+When you want to use results from a code chunk directly in the text, you can use this syntax:
+
+\`&#8203; r 1+1\`
+
+
+# Graphs
+
+![Artwork by Allison Horst](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/596ce690-7bab-4a5f-b319-e0e0c79d8a22_rw_3840.png?h=ca2c682852a4cc3ed2a2a34393220e55)
+
+
+## Theme options
+
+```{r}
+#| label: graph-with-theme
+#| code-line-numbers: "4"
+penguins |> 
+  ggplot() +
+  geom_point(aes(x = bill_length_mm, y = bill_depth_mm, col = species)) +
+  theme_classic()
+```
+
+## Labs
+
+```{r}
+#| label: graph-with-labs
+penguins |> 
+  ggplot() +
+  geom_point(aes(x = bill_length_mm, y = bill_depth_mm, col = species)) +
+  theme_classic() +
+  labs(x = "Bill length (mm)",
+       y = "Bill depth (mm)",
+       col = "Species",
+       title = "Penguin bills",
+       caption = "Data source: {palmerpenguins}")
+  
+```
+
