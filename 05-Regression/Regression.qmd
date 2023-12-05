@@ -1,0 +1,109 @@
+---
+title: Regressions with `fixest` in `R`
+subtitle: TU Dresden
+author: Sarah
+
+format: 
+  revealjs:
+    scrollable: true
+    self-contained: true
+    
+execute:
+  warning: false
+---
+
+```{r}
+#| label: setup
+
+library(palmerpenguins)
+library(ggplot2)
+library(dplyr)
+```
+
+
+## Why regressions?
+
+We can see a relationship, but can't put numbers to it just yet!
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: Scatter plot
+#| echo: false
+
+data(penguins)
+penguins |>
+  filter(!is.na(sex)) |>
+  ggplot() +
+  geom_point(aes(bill_length_mm, flipper_length_mm, col = sex)) +
+  labs(
+    title = "Penguin characteristics",
+    caption = "Data source: {palmerpenguins}",
+    x = "Bill length (mm)",
+    y = "Flipper length (mm)",
+    col = "Sex"
+  )
+
+```
+
+## Ordinary least squares (OLS)
+
+$$
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon
+$$
+
+We regress the *dependent variable* ($y_i$) on the *independent variables* ($x_1i, x_2i$).
+$i$ is the level of observation, e.g. persons or countries.
+$\epsilon$ is the error term, $\beta_0$ is a constant.
+
+## Formulas in `R`
+
+
+How we write it mathematically:
+
+$$
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon
+$$
+How we write it in `R`:
+
+```{r}
+#| label: some-formula
+#| eval: false
+#| echo: true
+
+y ~ x1 + x2
+flipper_length_mm ~ bill_length_mm + sex
+```
+
+## Regression library: `fixest`
+
+```{r}
+#| label: first-regression
+#| echo: true
+library(fixest)
+
+regression_flipper <- feols(flipper_length_mm ~ bill_length_mm + sex, 
+                            data = penguins)
+regression_bill <- feols(bill_length_mm ~ flipper_length_mm + sex, 
+                         data = penguins)
+```
+
+## Regression output with `modelsummary` {.smaller}
+
+
+```{r}
+#| label: regression-table
+#| echo: true
+
+library(modelsummary)
+modelsummary(regression_flipper, stars = TRUE)
+```
+
+## Regression outputs of multiple regressions {.smaller}
+
+```{r}
+#| label: regression-table-multiple-regresssions
+#| echo: true
+list(Flipper = regression_flipper,
+     Bill = regression_bill) |> 
+  modelsummary(stars = TRUE)
+```
