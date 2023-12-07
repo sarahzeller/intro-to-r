@@ -1,0 +1,91 @@
+---
+author: your_name
+title: My first Quarto document
+date: today
+
+execute:
+  warning: false
+  
+bibliography: grateful-refs.bib
+---
+
+# How to write in markdown
+
+
+You can write *italic*, ***bold***.
+You can also create lists:
+
+-   first item
+-   second item
+
+Or numbered lists:
+
+1.    first item
+2.    second item
+
+Also, you can create sub-titles:
+
+## Some subtitle
+
+## Some other subtitle
+
+Now that we're familiar with markdown, let's try out some code!
+
+# Loading the packages
+
+Let's start out by loading our necessary *packages*.
+As a next step, let's load our data from `palmerpenguins` and have a peek. 
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(palmerpenguins)
+library(modelsummary)
+library(grateful)
+library(here)
+library(simplermarkdown)
+```
+
+```{r}
+#| label: load-data
+data(penguins)
+head(penguins)
+```
+
+# Tables and figures
+
+Let's show a quick plot of some penguin characteristics in @fig-penguins.
+@tbl-penguins shows an overview of our penguin characteristics.
+
+```{r}
+#| label: fig-penguins
+#| fig-cap: Penguin characteristics
+ggplot(data = penguins) +
+  geom_point(aes(x = bill_length_mm, y = flipper_length_mm, colour = species)) +
+  labs(title = "Penguin characteristics",
+       caption = "Data from {palmerpenguins}",
+       x = "Bill length (mm)",
+       y = "Flipper length (mm)",
+       col = "Species") +
+  theme_minimal()
+```
+```{r}
+#| label: tbl-penguins
+#| tbl-cap: The palmerpenguins dataset
+
+penguins |> 
+  datasummary_skim()
+
+```
+
+# References
+
+Lastly, we want to show which references we used in this project.
+
+```{r}
+#| label: references
+#| output: asis
+cite_packages(output = "table", out.dir = here()) |> 
+  simplermarkdown::md_table()
+```
+
