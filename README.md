@@ -58,18 +58,19 @@ The aims of this course are in the following fields.
 
 ## Assignment
 
-The final assignment is due by 31 December 2023.
+The final assignment is due by 31 December 2024.
 You will use the skills you've learned in this course to work on it.
 
 ## Time plan
 
-### 5 December
+### 10 December
 
 - Introduction to `R`, `RStudio` and `Quarto`
 - Introduction to `ggplot2`
 - Introduction to `dplyr`
 
-### 6 December
+### 11 December
 
 - Create your own report with `Quarto`
 - Prettify your graphs with `theme_` and `labs()`
+- Run a first regression
