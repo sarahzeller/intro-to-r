@@ -63,6 +63,16 @@ mpg |> summary()
 plot(mpg$cty, mpg$hwy)
 ```
 
+## Things in R
+
+-   **Values**: `1, "Dresden", "2024-12-10"`
+-   **Objects**: `x <- c(22/7, 0.99, 3)`
+-   **Functions**: `round(x, digits = 3`
+
+## Data science workflow
+
+![](images/data-science-explore.png)
+
 # Let's get started! 🚀
 
 -   Open *RStudio*
@@ -104,9 +114,14 @@ To execute a line of code, use `Shift` + `Enter`.
 
 ```{webr-r}
 library(tidyverse)
-head(mpg)
-names(mpg)
+```
 
+```{webr-r}
+head(mpg)
+```
+
+```{webr-r}
+names(mpg)
 ```
 
 ## Excursion: Classes
@@ -122,8 +137,10 @@ names(mpg)
 What class does this result have?
 
 ```{webr-r}
-
 1 + 2.34
+```
+
+```{webr-r}
 c("hello", 1)
 ```
 
@@ -132,9 +149,14 @@ c("hello", 1)
 What's the result?
 
 ```{webr-r}
-
 1 + NA
+```
+
+```{webr-r}
 sum(1, 3, 900, NA)
+```
+
+```{webr-r}
 1 == NA
 ```
 
@@ -164,18 +186,26 @@ What if we want to create a new object? Easy:
 ```{webr}
 a <- 1
 b <- 2
+```
 
+```{webr}
 a + b
 ```
 
 ## Packages
 
-What if we want more functions?
+What if we want more functions? 
+We install packages, which contain functions.
+We install them once (in the console).
 
 ```{webr}
 install.packages("tidyverse")
 install.packages("palmerpenguins")
+```
 
+We can then load them (once per script).
+
+```{webr}
 library(tidyverse)
 library(palmerpenguins)
 ```
@@ -184,11 +214,10 @@ library(palmerpenguins)
 
 Have a look at the dataset `palmerpenguins`. What is it about? Plot a scatterplot.
 
-
 ```{webr-r}
 #| eval: false
 
-library(penguins)
+library(palmerpenguins)
 data(penguins)
 ```
 
