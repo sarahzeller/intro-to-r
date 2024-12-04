@@ -75,9 +75,7 @@ plot(mpg$cty, mpg$hwy)
 
 Let's use this as a calculator.
 
-```{r}
-#| echo: true
-#| eval: true
+```{webr-r}
 2 + 2
 15 * 35
 7^3
@@ -104,8 +102,7 @@ Let's have a look at a data set: `mtcars`. What is it about?
 
 To execute a line of code, use `Shift` + `Enter`.
 
-```{r}
-#| eval: true
+```{webr-r}
 library(tidyverse)
 head(mpg)
 names(mpg)
@@ -124,8 +121,7 @@ names(mpg)
 
 What class does this result have?
 
-```{r}
-#| eval: false
+```{webr-r}
 
 1 + 2.34
 c("hello", 1)
@@ -135,8 +131,7 @@ c("hello", 1)
 
 What's the result?
 
-```{r}
-#| eval: false
+```{webr-r}
 
 1 + NA
 sum(1, 3, 900, NA)
@@ -147,8 +142,7 @@ sum(1, 3, 900, NA)
 
 Let's plot this data set, specifically the columns `mpg` and `hp`. To access them, we have to put a `$` between the name of the data set and the name of the column. It will show up in the `Plots` pane.
 
-```{r}
-#| eval: true
+```{webr-r}
 plot(mpg$cty, mpg$hwy)
 
 ```
@@ -157,7 +151,7 @@ plot(mpg$cty, mpg$hwy)
 
 We're still in the R script. What if we want to explain to others (or our future self) what we intended with this code?
 
-```{r}
+```{webr-r}
 #| label: comment
 # create a scatterplot 
 plot(mpg$cty, mpg$hwy)
@@ -191,10 +185,10 @@ library(palmerpenguins)
 Have a look at the dataset `palmerpenguins`. What is it about? Plot a scatterplot.
 
 
-```{r}
+```{webr-r}
 #| eval: false
 
-library(tidyverse)
+library(penguins)
 data(penguins)
 ```
 
