@@ -1,0 +1,224 @@
+---
+title: Introduction to R
+subtitle: TU Dresden
+author: Sarah Zeller
+format: 
+  html: 
+    self-contained: true
+  revealjs:
+    self-contained: true
+
+execute:
+  echo: true
+    
+engine: knitr
+filters:
+  - webr
+---
+
+![Artwork by Allison Horst](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/ef5356a8-a9ee-4a54-9b62-7e1c4cb9f723_rw_1920.png?h=2da8ae510b02b70f895d2a79946c5f3d)
+
+# Why R?
+
+-   beginner-friendly programming language
+-   easy data-handling ✨
+-   programmming language specifically for statistics
+-   awesome for creating graphs 📈
+
+# Examples
+
+[![](images/mexico-ryan-hart.jpg)](https://twitter.com/ryanahart/status/1722937635763638390/photo/1)
+
+# Examples
+
+[![](images/nrennie-house-election.png)](https://twitter.com/nrennie35/status/1721845744733192395/photo/1)
+
+# Examples
+
+::: {layout-ncol="2"}
+[![](images/penguins-thompson.png)](https://pbs.twimg.com/media/EzFDCiJWQAUfBqn?format=png&name=900x900)
+
+[![](images/pp-eagle.png)](https://pbs.twimg.com/media/EeB5CDRXoAIi0R8?format=png&name=900x900)
+:::
+
+# So what can you do with `R`?
+
+## Simple calculations
+
+```{webr-r}
+4 + 2
+```
+
+## Show data
+
+```{webr-r}
+library(tidyverse)
+mpg |> head()
+mpg |> summary()
+```
+
+## Plot data
+
+```{webr-r}
+plot(mpg$cty, mpg$hwy)
+```
+
+## Things in R
+
+-   **Values**: `1, "Dresden", "2024-12-10"`
+-   **Objects**: `x <- c(22/7, 0.99, 3)`
+-   **Functions**: `round(x, digits = 3`
+
+## Data science workflow
+
+![](images/data-science-explore.png)
+
+# Let's get started! 🚀
+
+-   Open *RStudio*
+-   Create an R-project (`.rproj`)
+-   Open a `.R` script
+-   Save this script
+-   Let's check out the different panes 🔎
+
+## In the console...
+
+Let's use this as a calculator.
+
+```{webr-r}
+2 + 2
+15 * 35
+7^3
+539/11
+40 %% 9
+```
+
+## In the console (ctd)...
+
+Let's learn how to use a function. For this, we need to add *arguments* to the function call.
+
+```{r}
+#| eval: false
+#| echo: true
+?head
+?names
+?plot
+
+```
+
+## In the `R` script...
+
+Let's have a look at a data set: `mtcars`. What is it about?
+
+To execute a line of code, use `Shift` + `Enter`.
+
+```{webr-r}
+library(tidyverse)
+```
+
+```{webr-r}
+head(mpg)
+```
+
+```{webr-r}
+names(mpg)
+```
+
+## Excursion: Classes
+
+-   numeric (`1.34`, `-10.6`)
+-   integer (`1`, `-99`)
+-   character (`"hello"`, `"world"`)
+-   `NA`s: "not assigned"
+-   factors
+
+## Pop quiz
+
+What class does this result have?
+
+```{webr-r}
+1 + 2.34
+```
+
+```{webr-r}
+c("hello", 1)
+```
+
+## Pop quiz -- NAs
+
+What's the result?
+
+```{webr-r}
+1 + NA
+```
+
+```{webr-r}
+sum(1, 3, 900, NA)
+```
+
+```{webr-r}
+1 == NA
+```
+
+------------------------------------------------------------------------
+
+Let's plot this data set, specifically the columns `mpg` and `hp`. To access them, we have to put a `$` between the name of the data set and the name of the column. It will show up in the `Plots` pane.
+
+```{webr-r}
+plot(mpg$cty, mpg$hwy)
+
+```
+
+## Comments
+
+We're still in the R script. What if we want to explain to others (or our future self) what we intended with this code?
+
+```{webr-r}
+#| label: comment
+# create a scatterplot 
+plot(mpg$cty, mpg$hwy)
+```
+
+## Assigning (`<-`)
+
+What if we want to create a new object? Easy:
+
+```{webr}
+a <- 1
+b <- 2
+```
+
+```{webr}
+a + b
+```
+
+## Packages
+
+What if we want more functions? 
+We install packages, which contain functions.
+We install them once (in the console).
+
+```{webr}
+install.packages("tidyverse")
+install.packages("palmerpenguins")
+```
+
+We can then load them (once per script).
+
+```{webr}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+# Your turn!
+
+Have a look at the dataset `palmerpenguins`. What is it about? Plot a scatterplot.
+
+```{webr-r}
+#| eval: false
+
+library(palmerpenguins)
+data(penguins)
+```
+
+![Artwork by Allison Horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)
