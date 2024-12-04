@@ -222,3 +222,12 @@ data(penguins)
 ```
 
 ![Artwork by Allison Horst](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)
+
+
+# Let's start this course
+
+-   Download this repository: [https://github.com/sarahzeller/intro-to-r](https://github.com/sarahzeller/intro-to-r)
+-   *unzip*/*extract* it and save it somewhere
+-   double-click on the `.Rproj`
+-   open *01-Introduction/01-Quarto-Exercises.qmd*
+-   follow the instructions
